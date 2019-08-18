@@ -57,6 +57,7 @@ func NewObjectManager(connector IBConnector, cmpType string, tenantID string) *O
 	objMgr.connector = connector
 	objMgr.cmpType = cmpType
 	objMgr.tenantID = tenantID
+	objMgr.OmitCloudAttrs = true
 
 	return objMgr
 }
